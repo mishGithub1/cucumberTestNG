@@ -32,8 +32,8 @@ jobs:
                           
       continue-on-error: true
 
-    - name: List files in the target directory
-      run: ls -R ./target
+    #- name: List files in the target directory
+     # run: ls -R ./target
 
 
     - name: archive artifact
