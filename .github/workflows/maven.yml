@@ -28,7 +28,8 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean test -DtestngFile="testng.xml" -DthreadCount=5 -D"cucumber.filter.tags=@login or successfulLogin" -Dmaven.test.failures.ignore=true
+      run: mvn clean test -DtestngFile="testng.xml" -DthreadCount=5 -D"cucumber.filter.tags=@login or successfulLogin"
+      continue-on-error: true
 
     - name: archive artifact
       uses: actions/upload-artifact@v4
