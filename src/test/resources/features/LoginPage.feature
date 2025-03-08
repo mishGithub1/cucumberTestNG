@@ -9,7 +9,7 @@ Feature: Login page feature
 
     Examples:
       | username | password    | login_successful_message |
-      | student  | Password123 | Logged In Successfully   |
+      | student1  | Password123 | Logged In Successfully   |
 
   @login
   Scenario Outline: Login to practice test automation with invalid credentials
