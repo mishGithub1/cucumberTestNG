@@ -38,5 +38,5 @@ jobs:
     - name: archive artifact
       uses: actions/upload-artifact@v4
       with:
-        name: htmlPDFreports
-        path: './target/reports/SparkReport_*/Cucumber_Automation_Report.html, ./target/reports/SparkReport_*/Cucumber_Automation_Report.pdf, ./target/htmlreport.html'
+        name: cucumberHTMLReport
+        path: ./target/htmlreport.html
