@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="MyTestSuite" parallel="methods" data-provider-thread-count="3">
-    <listeners>
+    <!--<listeners>
         <listener class-name="retryFailedTests.AnnotationTransformer"/>
-    </listeners>
+    </listeners>-->
 
     <test name="cucumberRunner">
         <classes>
