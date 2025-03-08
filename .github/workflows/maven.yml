@@ -40,3 +40,15 @@ jobs:
       with:
         name: cucumberHTMLReport
         path: ./target/htmlreport.html
+
+    - name: archive artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: sparkHTMLReport
+        path: './target/reports/SparkReport_*/Cucumber_Automation_Report.html'
+
+    - name: archive artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: sparkPDFReport
+        path: './target/reports/SparkReport_*/Cucumber_Automation_Report.pdf'
