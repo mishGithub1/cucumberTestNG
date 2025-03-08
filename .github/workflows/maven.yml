@@ -29,3 +29,9 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean test -DtestngFile="testng.xml" -DthreadCount=5 -D"cucumber.filter.tags=@login or successfulLogin"
+
+    - name: archive artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: htmlPDFreports
+        path: ./target/SparkReport*/*.html, ./target/SparkReport*/*.pdf, ./target/*.html
